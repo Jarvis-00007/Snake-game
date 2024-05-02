@@ -2,6 +2,8 @@ from orbs import orb
 import pygame
 pygame.init()
 num_orbs=30
+startw=50
+starth=50
 import random
 class maingame:
   def __init__(self):
@@ -9,6 +11,8 @@ class maingame:
     self.loop=False
     self.window=pygame.display.set_mode(self.dims)
     self.orbs=[]
+    
+    self.player=Player(0,0,startw,starth)
 
   def init(self):
     for i in range(num_orbs):
@@ -29,6 +33,8 @@ class maingame:
     for fruit in self.orbs:
       fruit.draw(self.window)
     pygame.display.update()
+
+  self.player.draw(self.window)
 
   def play(self):
     while not self.loop:
