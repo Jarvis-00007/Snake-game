@@ -1,5 +1,5 @@
 from orbs import orb
-from player import player
+from player import Player
 import pygame
 import random
 
