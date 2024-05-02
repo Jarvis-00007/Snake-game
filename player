@@ -1,1 +1,6 @@
-
+import pygame
+class Player:
+  def__init__(self,x,y,w,h):
+     self.rect=pygame.Rect(x,y,w,h)
+     img=pygame.image.load("Basic_red_dot")
+     self.texture=pygame.transform.scale(img,(w,h))
