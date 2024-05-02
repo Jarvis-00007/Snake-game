@@ -9,7 +9,6 @@ class maingame:
   def update(self):
     for event in pygame.event.get():
       if event.type==pygame.QUIT:
-        print("entered loop")
         self.loop=True
       
   def render(self):
