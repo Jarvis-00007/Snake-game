@@ -1,4 +1,4 @@
-from Orbs import orb
+from orbs import orb
 import pygame
 pygame.init()
 num_orbs=30
