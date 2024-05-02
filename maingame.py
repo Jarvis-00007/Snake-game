@@ -1,11 +1,13 @@
 from orbs import orb
 from player import player
 import pygame
+import random
+
 pygame.init()
 num_orbs=30
 startw=50
 starth=50
-import random
+
 class maingame:
   def __init__(self):
     self.dims=(1000,500)
