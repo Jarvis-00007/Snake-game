@@ -33,8 +33,9 @@ class maingame:
     self.window.fill((48,25,52))
     for fruit in self.orbs:
       fruit.draw(self.window)
-    pygame.display.update()
     self.player.draw(self.window)
+    pygame.display.update()
+   
 
   def play(self):
     while not self.loop:
