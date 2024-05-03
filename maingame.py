@@ -16,7 +16,7 @@ class maingame:
     self.orbs=[]
     self.camera=camera(self.dims[0]/2-startw/2,self.dims[1]/2-starth/2,(starth,startw),self.dims)
 
-    self.player=Player(self.dims[0]/2-startw/2,self.dims[1]/2-starth/2,startw,starth)
+    self.player=Player(self.dims[0]/2-startw/2, self.dims[1]/2-starth/2, startw,starth,"reddot.png")
 
   def init(self):
     for i in range(num_orbs):
